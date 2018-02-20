@@ -34,7 +34,19 @@ Afterwards, fire up Neovim and type in `:PlugInstall`. That's it!
 
 ### Usage
 
-TODO: Add brief explanations of included plug-ins and notable shortcuts.
+**TODO**: Add brief explanations for included plug-ins and note key-mapping
+shortcuts.
+
+Notable inclusions are:
+- ALE
+- Airline
+- Deoplete 
+- Fugitive
+- fzf
+- GitGutter
+- Gutentags
+- NeoSnippet
+- NERDTree
 
 ### Support
 
