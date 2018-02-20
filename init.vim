@@ -71,7 +71,7 @@ nmap <leader><C-L> :+tabmove<CR>
 " '%' highlights all text between pairs 
 noremap % v%
 
-" edit and reload files
+" edit and reload config files
 nnoremap <silent> <leader>ei :tabe $MYVIMRC<CR>
 nnoremap <silent> <leader>ep :tabe $PLUGINS<CR>
 nnoremap <silent> <leader>es :tabe $SETTINGS<CR>
