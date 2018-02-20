@@ -1,5 +1,5 @@
- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-## NVIM
+## NVIM - Config
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This repository consists of the Neovim configuration files I personally use. My
 goal is creating a streamlined Python/Go-centric workflow *while maintaining
