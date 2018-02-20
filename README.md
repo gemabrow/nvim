@@ -1,4 +1,4 @@
-## NVIM - Config
+## Neovim - Meticulously Defined Configuration Files
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This repository consists of the Neovim configuration files I personally use. My
