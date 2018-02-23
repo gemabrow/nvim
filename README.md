@@ -1,7 +1,8 @@
 ## Neovim - Meticulously Defined Configuration Files
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This repository consists of the Neovim configuration files I personally use. My
+This repository consists of the Neovim configuration files I use. My
 goal is creating a streamlined Python/Go-centric workflow *while maintaining
 simplicity*. **Remembering shortcuts is not my strong suit**. Feel free to
 use these as they are, or to repurpose them for your own needs.
@@ -12,13 +13,14 @@ Please ensure the following are installed:
 - `neovim`
 - `git` or `curl`
 - [`vim-plug`](https://github.com/junegunn/vim-plug)
+- (recommended) [`anaconda`](https://www.anaconda.com/download/)
 
 ### Installation
 
 Neovim follows the XDG Base Directory Specification, so its user configuration
 file(s) can be found in `~\.config\nvim`.
 
-If you'd like to keep synced to this repo, then install using `git`
+If you would like to keep synced to this repo, install using `git`
 ```
 git clone https://github.com/gemabrow/nvim.git ~/.config/nvim
 ```
@@ -48,16 +50,12 @@ Notable inclusions are:
 - NeoSnippet
 - NERDTree
 
-### Support
-
-Will be provided, even in the unlikely scenario that it is needed.
-
 ### Thanks
 
 Thanks to all of the developers responsible for vim plug-ins everywhere, and to
 the developers behind Neovim. Additional gratitude to those listed below
-for taking the time to list the benefits of Neovim, and for highlighting
-especially useful tools in a sea of useful tools:
+for taking the time to list the benefits of Neovim. In a sea of useful tools,
+they highlighted many of those included here.
 
 - [Sebastian Dahlgren, "My neovim setup for Go"](https://hackernoon.com/my-neovim-setup-for-go-7f7b6e805876 )
 - [Geoff Greer, "Why Neovim is Better than Vim"](https://geoff.greer.fm/2015/01/15/why-neovim-is-better-than-vim/ )
