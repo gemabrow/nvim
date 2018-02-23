@@ -57,6 +57,8 @@ let g:deoplete#enable_smart_case = 1
 
 let g:deoplete#sources#jedi#enable_cache = 1
 let g:deoplete#sources#jedi#is_debug_enabled = 0
+" point the following to conda's python path
+" let g:deoplete#sources#jedi#python_path = '/opt/anaconda/bin/python'
 
 " ************************************** * * * * * * * * * * * *  vim-fugitive
 set statusline+=%{fugitive#statusline()}
