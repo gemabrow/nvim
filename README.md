@@ -13,7 +13,7 @@ Please ensure the following are installed:
 - `neovim`
 - `git` or `curl`
 - [`vim-plug`](https://github.com/junegunn/vim-plug)
-- (recommended) [`anaconda`](https://www.anaconda.com/download/)
+- [`anaconda`](https://www.anaconda.com/download/) *recommended*
 
 ### Installation
 
