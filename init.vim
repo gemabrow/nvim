@@ -15,7 +15,7 @@ set wildignorecase
 " ************************************** * * * * * * * * * *  General Behavior
 set hidden
 
-" ************************************** * * * * * * * * * * * * * * * * * HUD 
+" ************************************** * * * * * * * * * * * * * * * * * HUD
 set noshowmode
 set number
 set ruler
@@ -23,7 +23,7 @@ set showcmd
 set showmatch
 
 " 80-character column marker
-set colorcolumn=80 
+set colorcolumn=80
 highlight ColorColumn ctermbg=80
 
 " tabs and splits open to the right and bottom
@@ -31,12 +31,19 @@ set splitbelow
 set splitright
 
 " ************************************** * * * * * * Indentation + Spaces/Tabs
+set smartindent
 set autoindent
 set noexpandtab
-set shiftwidth=4
-set smartindent
 set softtabstop=4
+set shiftwidth=4
 set tabstop=4
+set listchars=tab:→∙,trail:┃
+set list
+
+" guarantee tabs for make files
+autocmd FileType make setlocal noexpandtab
+" expand tabs for Python
+autocmd BufEnter *.py set ai sw=4 ts=4 sts=4 sta et
 
 " ************************************** * * * * * * * * * * * *  Key Mappings
 set mouse=a
@@ -68,7 +75,7 @@ nmap <leader><C-H> :-tabmove<CR>
 " Move tab right
 nmap <leader><C-L> :+tabmove<CR>
 
-" '%' highlights all text between pairs 
+" '%' highlights all text between pairs
 noremap % v%
 
 " edit and reload config files
