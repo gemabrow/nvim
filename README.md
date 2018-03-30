@@ -34,11 +34,6 @@ curl -sS https://raw.githubusercontent.com/gemabrow/nvim/master/plug-settings.vi
 
 Afterwards, fire up Neovim and type in `:PlugInstall`. That's it!
 
-### Usage
-
-**TODO**: Add brief explanations for included plug-ins and note key-mapping
-shortcuts.
-
 Notable inclusions are:
 - ALE
 - Airline
@@ -49,6 +44,12 @@ Notable inclusions are:
 - Gutentags
 - NeoSnippet
 - NERDTree
+
+[//]: # (
+### Usage
+
+**TODO**: Add brief explanations for included plug-ins and note key-mapping
+shortcuts.)
 
 ### Thanks
 
