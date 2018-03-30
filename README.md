@@ -7,6 +7,17 @@ goal is creating a streamlined Python/Go-centric workflow *while maintaining
 simplicity*. **Remembering shortcuts is not my strong suit**. Feel free to
 use these as they are, or to repurpose them for your own needs.
 
+Notable inclusions are:
+- ALE
+- Airline
+- Deoplete 
+- Fugitive
+- fzf
+- GitGutter
+- Gutentags
+- NeoSnippet
+- NERDTree
+
 ### Dependencies
 
 Please ensure the following are installed:
@@ -33,17 +44,6 @@ curl -sS https://raw.githubusercontent.com/gemabrow/nvim/master/plug-settings.vi
 ```
 
 Afterwards, fire up Neovim and type in `:PlugInstall`. That's it!
-
-Notable inclusions are:
-- ALE
-- Airline
-- Deoplete 
-- Fugitive
-- fzf
-- GitGutter
-- Gutentags
-- NeoSnippet
-- NERDTree
 
 [//]: # (### Usage
 **TODO**: Add brief explanations for included plug-ins and note key-mapping
