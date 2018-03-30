@@ -8,23 +8,23 @@ simplicity*. **Remembering shortcuts is not my strong suit**. Feel free to
 use these as they are, or to repurpose them for your own needs.
 
 Notable inclusions are:
-- ALE
-- Airline
-- Deoplete 
-- Fugitive
-- fzf
-- GitGutter
-- Gutentags
-- NeoSnippet
-- NERDTree
+- [ALE](https://github.com/w0rp/ale)
+- [Airline](https://github.com/vim-airline/vim-airline)
+- [Deoplete](https://github.com/Shougo/deoplete.nvim)
+- [Fugitive](https://github.com/tpope/vim-fugitive)
+- [fzf](https://github.com/junegunn/fzf.vim)
+- [GitGutter](https://github.com/airblade/vim-gitgutter)
+- [Gutentags](https://github.com/ludovicchabant/vim-gutentags)
+- [NeoSnippet](https://github.com/Shougo/neosnippet.vim)
+- [NERDTree](https://github.com/scrooloose/nerdtree)
 
 ### Dependencies
 
 Please ensure the following are installed:
-- `neovim`
+- [`neovim`](https://neovim.io/)
 - `git` or `curl`
 - [`vim-plug`](https://github.com/junegunn/vim-plug)
-- [`anaconda`](https://www.anaconda.com/download/) *recommended*
+- [`anaconda`](https://www.anaconda.com/download/) *(recommended)*
 
 ### Installation
 
