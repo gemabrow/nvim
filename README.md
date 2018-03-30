@@ -45,9 +45,7 @@ Notable inclusions are:
 - NeoSnippet
 - NERDTree
 
-[//]: # (
-### Usage
-
+[//]: # (### Usage
 **TODO**: Add brief explanations for included plug-ins and note key-mapping
 shortcuts.)
 
