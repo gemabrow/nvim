@@ -1,3 +1,4 @@
+scriptencoding utf-8
 let $PLUGINS = '$HOME/.config/nvim/plug-ins.vim'
 let $SETTINGS = '$HOME/.config/nvim/plug-settings.vim'
 source $PLUGINS
@@ -41,9 +42,16 @@ set listchars=tab:→∙,trail:┃
 set list
 
 " guarantee tabs for make files
-autocmd FileType make setlocal noexpandtab
+augroup filetype_make
+	autocmd!
+	autocmd FileType make setlocal noexpandtab
+augroup END
+
 " expand tabs for Python
-autocmd BufEnter *.py set ai sw=4 ts=4 sts=4 sta et
+augroup filetype_py
+	autocmd!
+	autocmd BufEnter *.py set ai sw=4 ts=4 sts=4 sta et
+augroup END
 
 " ************************************** * * * * * * * * * * * *  Key Mappings
 set mouse=a
