@@ -16,9 +16,13 @@ Plug 'Shougo/deoplete.nvim',           " async dark-powered autocomplete
 Plug 'Shougo/neco-syntax'              " all filetypes
 Plug 'zchee/deoplete-clang'            " C/C++/Objective-C/Objective-C++
 Plug 'fszymanski/deoplete-emoji'       " Emoji
+Plug 'clojure-vim/async-clj-omni'      " Clojure
+Plug 'eraserhd/parinfer-rust',         " Lisp: auto-adjusting parens
+			\{ 'do': 'cargo build --release'}
 Plug 'zchee/deoplete-go',              {'for': 'go', 'do': 'make'}
 Plug 'zchee/deoplete-jedi',            {'for': 'python'}
 Plug 'Shougo/neco-vim',                {'for': 'vim'}
+Plug 'dart-lang/dart-vim-plugin',      {'for': 'dart'}
 
 " Snippets
 Plug 'Shougo/neosnippet' | Plug 'Shougo/neosnippet-snippets'
@@ -45,7 +49,7 @@ Plug 'w0rp/ale'                        " Asynchronous Lint Engine
 
 " ************************************** * * * * * * * * * * NERDTree Plug-Ins
 Plug 'scrooloose/nerdtree',            {'on': 'NERDTreeToggle'}
-Plug 'Xuyuanp/nerdtree-git-plugin'     " TODO: add description
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'          " display devicon	 in NERDTree, etc.
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 

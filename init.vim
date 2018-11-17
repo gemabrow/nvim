@@ -32,9 +32,8 @@ set splitbelow
 set splitright
 
 " ************************************** * * * * * * Indentation + Spaces/Tabs
-set smartindent
-set autoindent
-set noexpandtab
+set copyindent
+set expandtab
 set softtabstop=4
 set shiftwidth=4
 set tabstop=4
@@ -66,6 +65,9 @@ inoremap jk <esc>
 
 " Map SPACE to remove search highlighting
 nmap <SPACE> <SPACE>:noh<CR>
+
+"Remove all trailing whitespace by pressing F5
+nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 
 " Window navigation
 nnoremap <C-J> <C-W><C-J>

@@ -37,7 +37,7 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_tabs = 1
-let g:airline#extensions#tabline#tab_nr_type = 1 
+let g:airline#extensions#tabline#tab_nr_type = 1
 let g:airline#extensions#tabline#show_splits = 0
 let g:airline#extensions#tabline#show_buffers = 0
 let g:airline#extensions#tabline#show_close_button = 0
@@ -55,10 +55,13 @@ let g:indent_guides_guide_size = 1
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_smart_case = 1
 
+let g:deoplete#keyword_patterns = {}
+let g:deoplete#keyword_patterns.clojure = '[\w!$%&*+/:<=>?@\^_~\-\.#]*'
+
 let g:deoplete#sources#jedi#enable_cache = 1
 let g:deoplete#sources#jedi#is_debug_enabled = 0
 " point the following to conda's python path
-let g:deoplete#sources#jedi#python_path = '/opt/anaconda/bin/python'
+" let g:deoplete#sources#jedi#python_path = '/opt/anaconda/bin/python'
 
 " ************************************** * * * * * * * * * * * *  vim-fugitive
 set statusline+=%{fugitive#statusline()}
@@ -66,7 +69,7 @@ set statusline+=%{fugitive#statusline()}
 " ************************************** * * * * * * * * * * * * * * * * * ALE
 let g:ale_completion_enabled = 1
 
-let g:ale_sign_error = '⤫'
+let g:ale_sign_error = ''
 let g:ale_sign_warning = ''
 
 " ************************************** * * * * * * * * * * * * * * * * *  Go
