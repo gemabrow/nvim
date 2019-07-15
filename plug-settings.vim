@@ -90,12 +90,28 @@ let g:go_highlight_types = 1
 autocmd FileType apache setlocal commentstring=#\ %s 
 
 " ************************************** * * * * * * * * * * * * * *  NERDTree
-let g:NERDTreeHighlightCursorline = 0
+let g:NERDTreeHighlightCursorline = 1
+let g:NERDTreeQuitOnOpen = 1
+let g:NERDTreeMinimalUI = 1
+let NERDTreeStatusline="%{exists('b:NERDTree')?fnamemodify(b:NERDTree.root.path.str(), ':~'):''}"
+
+" map NERDTreeToggle to Ctrl-o
 map <C-o> :NERDTreeToggle<CR>
 
-" open on directory
 autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+" open NERDTree if no args or opened on directory
+function StartUp()
+    if argc() == 0 && !exists("s:std_in")
+        NERDTree
+    elseif argc() ==1 && isdirectory(argv()[0]) && !exists("s:std_in")
+        exe 'NERDTree' argv()[0]
+        wincmd p
+        ene
+        exe 'cd '.argv()[0]
+    endif
+endfunction
+
+autocmd VimEnter * call StartUp()
 " close if only NERDTree open
 autocmd bufenter * if (winnr("$") == 1
 			\ && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
