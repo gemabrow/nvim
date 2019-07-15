@@ -10,15 +10,17 @@ Plug 'vim-airline/vim-airline'| Plug 'vim-airline/vim-airline-themes'
 
 " ************************************** * * *  Autocomplete & Engine Plug-Ins
 Plug 'Shougo/deoplete.nvim',           " async dark-powered autocomplete
-			\{ 'do': ':UpdateRemotePlugins' }
+            \{ 'do': ':UpdateRemotePlugins' }
 
 " Asynchronous Completion Engines (ACE)
 Plug 'Shougo/neco-syntax'              " all filetypes
 Plug 'zchee/deoplete-clang'            " C/C++/Objective-C/Objective-C++
 Plug 'fszymanski/deoplete-emoji'       " Emoji
 Plug 'clojure-vim/async-clj-omni'      " Clojure
+Plug 'clojure-vim/acid.nvim',          "Async Clojure Interactive Development
+            \{ 'do': ':UpdateRemotePlugins' }
 Plug 'eraserhd/parinfer-rust',         " Lisp: auto-adjusting parens
-			\{ 'do': 'cargo build --release'}
+            \{ 'do': 'cargo build --release'}
 Plug 'zchee/deoplete-go',              {'for': 'go', 'do': 'make'}
 Plug 'zchee/deoplete-jedi',            {'for': 'python'}
 Plug 'Shougo/neco-vim',                {'for': 'vim'}
@@ -45,6 +47,8 @@ Plug 'tpope/vim-fugitive'              " super great Git wrapper
 Plug 'airblade/vim-gitgutter'          " show Git changes in gutter
 
 " ************************************** * * * * * * * * * * * Linter Plug-Ins
+Plug 'clojure-vim/acid.nvim'           " Asynchronous Clojure
+                                       " Interactive Development
 Plug 'w0rp/ale'                        " Asynchronous Lint Engine
 
 " ************************************** * * * * * * * * * * NERDTree Plug-Ins
