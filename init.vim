@@ -15,6 +15,8 @@ set wildignorecase
 
 " ************************************** * * * * * * * * * *  General Behavior
 set hidden
+let g:python_host_prog = '/usr/local/bin/versions/neovim2/bin/python'
+let g:python3_host_prog = '/usr/local/bin/versions/neovim3/bin/python'
 
 " ************************************** * * * * * * * * * * * * * * * * * HUD
 set noshowmode
