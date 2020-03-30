@@ -1,4 +1,9 @@
 " ************************************** * * * * * * * * Plug-In Manager BEGIN
+if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
+  silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 call plug#begin('~/.local/share/nvim/plugged')
 
 " ************************************** * * * * * * * * *  Aesthetic Plug-Ins
@@ -9,8 +14,15 @@ Plug 'nathanaelkane/vim-indent-guides' " indentation visual guide
 Plug 'vim-airline/vim-airline'| Plug 'vim-airline/vim-airline-themes'
 
 " ************************************** * * *  Autocomplete & Engine Plug-Ins
+let uname = substitute(system('uname'), '\n', '', '')
+if uname == 'Darwin'
+    Plug 'rizzatti/dash.vim'           " allow for Dash.app lookups on MacOS
+endif
+
 Plug 'Shougo/deoplete.nvim',           " async dark-powered autocomplete
 			\{ 'do': ':UpdateRemotePlugins' }
+
+Plug 'jalvesaq/Nvim-R' " improve support of R code
 
 " Asynchronous Completion Engines (ACE)
 Plug 'Shougo/neco-syntax'              " all filetypes
@@ -28,7 +40,7 @@ Plug 'dart-lang/dart-vim-plugin',      {'for': 'dart'}
 Plug 'Shougo/neosnippet' | Plug 'Shougo/neosnippet-snippets'
 
 " ************************************** * * * * * * * Filetype-Based Plug-Ins
-Plug 'fatih/vim-go'                    " TODO: add description
+Plug 'fatih/vim-go'                    " Adds Golang support
 function! BuildComposer(info)          " Markdown Composer
   if a:info.status != 'unchanged' || a:info.force
     if has('nvim')
