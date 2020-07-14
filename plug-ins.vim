@@ -23,6 +23,7 @@ Plug 'Shougo/deoplete.nvim',           " async dark-powered autocomplete
 			\{ 'do': ':UpdateRemotePlugins' }
 
 Plug 'jalvesaq/Nvim-R' " improve support of R code
+Plug 'dag/vim-fish'    " fish shell support
 
 " Asynchronous Completion Engines (ACE)
 Plug 'Shougo/neco-syntax'              " all filetypes
