@@ -53,10 +53,6 @@ let g:indent_guides_guide_size = 1
 
 " ************************************** * * * * * * * * * * * * * *  deoplete
 let g:deoplete#enable_at_startup = 1
-let g:deoplete#enable_smart_case = 1
-
-let g:deoplete#keyword_patterns = {}
-let g:deoplete#keyword_patterns.clojure = '[\w!$%&*+/:<=>?@\^_~\-\.#]*'
 
 let g:deoplete#sources#jedi#enable_cache = 1
 let g:deoplete#sources#jedi#is_debug_enabled = 0
