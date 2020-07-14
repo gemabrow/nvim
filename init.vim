@@ -8,6 +8,7 @@ source $SETTINGS
 colorscheme gruvbox
 set background=dark
 set termguicolors
+syntax enable
 
 " ************************************** * * * * * * * * * * * *  Capilization
 set smartcase
@@ -41,6 +42,7 @@ set shiftwidth=4
 set tabstop=4
 set listchars=tab:→∙,trail:┃
 set list
+filetype plugin indent on
 
 " guarantee tabs for make files
 augroup filetype_make
