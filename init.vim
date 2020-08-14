@@ -1,7 +1,7 @@
 scriptencoding utf-8
 if !exists('g:vscode')
-  let $PLUGINS = '$HOME/.config/nvim/plug-ins.vim'
-  let $SETTINGS = '$HOME/.config/nvim/plug-settings.vim'
+  let $PLUGINS = '$XDG_CONFIG_HOME/nvim/plug-ins.vim'
+  let $SETTINGS = '$XDG_CONFIG_HOME/nvim/plug-settings.vim'
   source $PLUGINS
   source $SETTINGS
   
@@ -17,9 +17,9 @@ if !exists('g:vscode')
   
   " ************************************** * * * * * * * * * *  General Behavior
   set hidden
-  let g:python_host_prog = '/usr/bin/python2'
-  let g:python3_host_prog = '/usr/local/anaconda3/bin/python'
-  
+  let g:python_host_prog  = '/usr/bin/python2'
+  let g:python3_host_prog = '/usr/local/anaconda3/bin/python3'
+ 
   " ************************************** * * * * * * * * * * * * * * * * * HUD
   set noshowmode
   set number
@@ -27,9 +27,9 @@ if !exists('g:vscode')
   set showcmd
   set showmatch
   
-  " 80-character column marker
-  set colorcolumn=80
-  highlight ColorColumn ctermbg=80
+  " 81-character column marker
+  set colorcolumn=81
+  highlight ColorColumn ctermbg=81
   
   " tabs and splits open to the right and bottom
   set splitbelow
@@ -59,7 +59,7 @@ if !exists('g:vscode')
   
   " ************************************** * * * * * * * * * * * *  Key Mappings
   set mouse=a
-  let g:mapleader = ';'
+  let g:mapleader = ','
   
   " tab to insert auto-completions
   inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
