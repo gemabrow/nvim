@@ -17,9 +17,12 @@ if !exists('g:vscode')
   
   " ************************************** * * * * * * * * * *  General Behavior
   set hidden
+  
+  " ************************************** * * * * * * * * * * * * * * * * Hosts
   let g:python_host_prog  = '/usr/bin/python2'
   let g:python3_host_prog = '/usr/local/anaconda3/bin/python3'
- 
+  let g:ruby_host_prog    = '~/.rbenv/shims/neovim-ruby-host'
+
   " ************************************** * * * * * * * * * * * * * * * * * HUD
   set noshowmode
   set number
@@ -37,7 +40,6 @@ if !exists('g:vscode')
   
   " ************************************** * * * * * * Indentation + Spaces/Tabs
   set copyindent
-  set expandtab
   set softtabstop=4
   set shiftwidth=4
   set tabstop=4
