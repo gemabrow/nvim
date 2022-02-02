@@ -1,7 +1,7 @@
 scriptencoding utf-8
 if !exists('g:vscode')
-  let $PLUGINS = '$XDG_CONFIG_HOME/nvim/plug-ins.vim'
-  let $SETTINGS = '$XDG_CONFIG_HOME/nvim/plug-settings.vim'
+  let $PLUGINS = stdpath('config') . '/plug-ins.vim'
+  let $SETTINGS = stdpath('config') . '/plug-settings.vim'
   source $PLUGINS
   source $SETTINGS
   
@@ -19,7 +19,7 @@ if !exists('g:vscode')
   set hidden
   
   " ************************************** * * * * * * * * * * * * * * * * Hosts
-  let g:python_host_prog  = '/usr/bin/python2'
+  let g:python_host_prog  = '/usr/env/python2'
   let g:python3_host_prog = '/usr/local/anaconda3/bin/python3'
   let g:ruby_host_prog    = '~/.rbenv/shims/neovim-ruby-host'
 
