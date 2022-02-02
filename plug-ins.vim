@@ -71,4 +71,3 @@ Plug 'hkupty/iron.nvim',               {'for': 'python'}
 
 " ************************************** * * * * * * * * * * * Search Plug-Ins
 Plug 'junegunn/fzf'                    " fuzzy search
-Plug 'ludovicchabant/vim-gutentags'    " tag management
