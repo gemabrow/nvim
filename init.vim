@@ -19,9 +19,9 @@ if !exists('g:vscode')
   set hidden
   
   " ************************************** * * * * * * * * * * * * * * * * Hosts
-  let g:python_host_prog  = '/usr/env/python2'
-  let g:python3_host_prog = '/usr/local/anaconda3/bin/python3'
-  let g:ruby_host_prog    = '~/.rbenv/shims/neovim-ruby-host'
+  let g:python_host_prog  = expand('~/.conda/envs/neovim2/bin/python2')
+  let g:python3_host_prog = expand('~/.conda/envs/neovim3/bin/python3')
+  let g:ruby_host_prog    = expand('~/.rbenv/shims/neovim-ruby-host')
 
   " ************************************** * * * * * * * * * * * * * * * * * HUD
   set noshowmode
@@ -101,3 +101,4 @@ if !exists('g:vscode')
   nnoremap <silent> <leader>es :tabe $SETTINGS<CR>
   nnoremap <silent> <leader>si :source $MYVIMRC<CR>
 endif
+
