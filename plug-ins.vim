@@ -28,7 +28,6 @@ Plug 'dag/vim-fish'    " fish shell support
 " Asynchronous Completion Engines (ACE)
 Plug 'Shougo/neco-syntax'              " all filetypes
 Plug 'zchee/deoplete-clang'            " C/C++/Objective-C/Objective-C++
-Plug 'fszymanski/deoplete-emoji'       " Emoji
 Plug 'clojure-vim/async-clj-omni'      " Clojure
 Plug 'eraserhd/parinfer-rust',         " Lisp: auto-adjusting parens
 			\{ 'do': 'cargo build --release'}
