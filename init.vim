@@ -30,9 +30,11 @@ if !exists('g:vscode')
   " ************************************** * * * * * * * * * * * * * * * * Hosts
 
   if g:os =~ "Darwin" " MacOS
-  	  let g:python_host_prog  = '/usr/bin/python2'
-	  let g:python3_host_prog = '/usr/local/anaconda3/envs/pynvim/bin/python'
-	  let g:ruby_host_prog    = expand('~/.rbenv/shims/neovim-ruby-host')
+	  let g:loaded_perl_provider = 0
+	  if !empty($CONDA_PREFIX) 
+	  	  let g:python_host_prog  = $CONDA_PREFIX . '/bin/python2'
+	  	  let g:python3_host_prog = $CONDA_PREFIX . '/bin/python'
+	  endif
   elseif g:os =~ "Linux" " Linux, BSD, etc
 	  let g:python_host_prog  = expand('~/.conda/envs/neovim2/bin/python2')
 	  let g:python3_host_prog = expand('~/.conda/envs/neovim3/bin/python3')

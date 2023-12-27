@@ -4,6 +4,7 @@ if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
+
 call plug#begin('~/.local/share/nvim/plugged')
 
 " ************************************** * * * * * * * * *  Aesthetic Plug-Ins
@@ -64,9 +65,12 @@ Plug 'scrooloose/nerdtree',            {'on': 'NERDTreeToggle'}
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'          " display devicon	 in NERDTree, etc.
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'luukvbaal/nnn.nvim'
 
 " ************************************** * * * * * * * * * * * * REPL Plug-Ins
 Plug 'hkupty/iron.nvim',               {'for': 'python'}
 
 " ************************************** * * * * * * * * * * * Search Plug-Ins
-Plug 'junegunn/fzf'                    " fuzzy search
+Plug 'junegunn/fzf',                   " fuzzy search
+			\{ 'do': { -> fzf#install() } }
+Plug 'nanotee/zoxide.vim'             " autojump-like directory navigation
